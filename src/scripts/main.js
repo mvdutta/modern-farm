@@ -27,17 +27,18 @@ import { catalog } from "./catalog.js";
 let newPlantingPlan = createPlan() //this function will make a plan and will store it in the variable newPlantingPlan. This function does not take any inputs.
 //This newPlantingPlan is will be the input to the plantSeeds function we created in tractor.js.
 // console.log(newPlantingPlan)
-plantSeeds(newPlantingPlan)
-// let fieldAfterPlanting = usePlants() //this will show us whether things have been planted
-// console.log(fieldAfterPlanting)
+plantSeeds(newPlantingPlan) // gave the plan to plantSeeds from tractor.js
 
 //#5 get the array of plants from the field module (usePlants)
 
-let fieldCopy = usePlants() //pass this fieldCopy into our harvest function and get the harvested plants.
+let fieldCopy = usePlants() 
+//pass this fieldCopy into our harvest function and get the harvested plants.
 let harvest = harvestPlants(fieldCopy)
 console.log(harvest)
 
+//use catalog to generate the HTML string
 let HTMLString = catalog(harvest)
 console.log(HTMLString)
 
+//put the HTML string in the appropriate place in index.HTML
 document.querySelector(".catalog").innerHTML=HTMLString

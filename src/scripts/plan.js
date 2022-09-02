@@ -1,5 +1,7 @@
 const types = ["Soybean", "Corn", "Asparagus", "Wheat", "Potato", "Sunflower"]
 
+
+//function to create 3 rows of plants
 export const createPlan = () => {
     const plan = []
 

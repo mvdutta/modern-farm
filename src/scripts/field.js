@@ -16,7 +16,7 @@ export const addPlant = (seed) => {
         plantsArray.push(seed)
     }
 }
- //Step 3: Goal is to create a clone of the plantsArray so that the data can be used without changing. The original copyDefine and export a function called usePlants that returns a copy of the array of plants (plantsArray). 
+ //Step 3: Goal is to create a clone of the plantsArray so that the data can be used without changing the original copyDefine and export a function called usePlants that returns a copy of the array of plants (plantsArray). 
 
 export const usePlants = () => {
     let plantsArrayCopy = [] //create an empty array to store the copies of all the objects. 
